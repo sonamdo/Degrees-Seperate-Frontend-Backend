@@ -5,17 +5,6 @@ Degrees of separation app split into Frontend and Backend docker images. Docker 
 
 Calculate how many steps are required to connect users. Breadth-first search method is used to sift through connections. PostgreSQL used for production environment, Sqlite for development
 
-## Installation
-
-Prerequisites: Node, npm, yarn, Ruby 2.7.3, Rails
-
-Clone repo then run the following commands to run locally on port 3000
-
-`gem install bundler`
-`rails db:migrate`
-`yarn install`
-`rails server`
-
 ## Endpoints
 - connections/create: Takes csv file with two columns, user1 and user2. Parses to database using connection model.
 - connections/show: Takes query string with two params, user1 and user2. Returns degree of connection between the two. Return false if no possible connection.

@@ -43,8 +43,8 @@ const UserList = ({setUser1, setUser2}) => {
                         <tbody>
                             {   searchResults?  
                             searchResults.map((user) => {
-                                return <tr key = {user.id.toString()}>
-                                        <td>{user.id}</td>
+                                return <tr key = {user.userid.toString()}>
+                                        <td>{user.userid}</td>
                                         <td>
                                             <button 
                                                 type ="button" 
@@ -81,8 +81,8 @@ const UserList = ({setUser1, setUser2}) => {
                         <tbody>
                             {   searchResults2?  
                                 searchResults2.map((user) => {
-                                    return <tr>
-                                            <td>{user.id}</td>
+                                    return <tr key = {user.userid.toString() + "t2"}>
+                                            <td>{user.userid}</td>
                                             <td>
                                                 <button 
                                                     type ="button" 

@@ -1,13 +1,13 @@
 version: '3'
 services:
     degrees-backend:
-        image: degrees-backend
-        build: ./degrees-backend
+        image: sonamdo/degrees-backend
+        build: .
         ports: 
             - 3000:3000
     degrees-frontend: 
-        image: degrees-frontend
-        build: ./degrees-frontend
+        image: sonamdo/degrees-frontend
+        build: .
         ports:
             - 8000:8000
         links:
